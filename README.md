@@ -1,2 +1,5 @@
 # Data-Science
-Repo for personal data science projects
+This repo is created for personal data science projects. All projects are following 'Cookiecutter Data Science' project structures.
+
+
+
