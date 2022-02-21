@@ -47,7 +47,7 @@ def main(input_filepath, output_filepath):
 
     raw_data_pd.drop("income_cat", axis=1, inplace=True)
 
-    # split attributes and label
+    # split attributes and label by using stratified sampling
 
     strat_train_set_features = strat_train_set.drop("median_house_value", axis =1)
     strat_train_set_label = strat_train_set["median_house_value"].copy()
@@ -78,4 +78,4 @@ if __name__ == '__main__':
     # load up the .env entries as environment variables
     # load_dotenv(find_dotenv())
 
-    main(RAW_DATA_PATH,PROCESSED_DATA_PATH)
+    main(RAW_DATA_PATH, PROCESSED_DATA_PATH)

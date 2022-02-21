@@ -91,3 +91,7 @@ target/
 # MLflow related
 /mlruns/
 /temp/
+
+# ML models
+*.pth
+*.sav
