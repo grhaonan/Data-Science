@@ -9,6 +9,7 @@ import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 import mlflow
 import mlflow.sklearn
+import mlflow.gluon
 
 logging.basicConfig(level=logging.INFO)
 
@@ -61,6 +62,7 @@ if __name__ =='__main__':
             "features": args.features
         }
         mlflow.log_params(params)
+        #mlflow.gluon.autolog()
         
         # TRAIN
         logging.info('training model')
